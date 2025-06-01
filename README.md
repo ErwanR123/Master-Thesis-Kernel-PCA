@@ -1,30 +1,32 @@
-# ACP à noyaux – Codes du mémoire de Master 1
+# Mémoire M1 – Analyse en Composantes Principales à Noyaux
 
-Ce repository contient l’ensemble des codes Python développés dans le cadre du mémoire de Master 1 intitulé *Analyse en Composantes Principales à noyaux*, soutenu à l’Université Paris Dauphine-PSL (2025).
+Ce dépôt regroupe les fichiers liés à notre mémoire de Master 1 en mathématiques appliquées à l’Université Paris Dauphine - PSL. Le travail porte sur l’Analyse en Composantes Principales à noyaux (Kernel PCA), une méthode de réduction de dimension non linéaire, et ses applications pratiques.
 
-##  Contenu du mémoire
+📄 Le mémoire complet est disponible dans le fichier :  
+**`Mémoire M1 Kernel PCA - Kevin Wardakhan - Ibrahim Youssouf Abdelatif - Erwan Ouabdesselam.pdf`**
 
-Le mémoire explore l’extension non linéaire de l’Analyse en Composantes Principales (ACP) via les méthodes à noyaux, en détaillant :
-- les fondements théoriques de l’ACP et de l’ACP à noyaux,
-- la mise en œuvre algorithmique de la KPCA,
-- plusieurs expérimentations sur données réelles.
+---
 
-##  Expériences incluses
+## Présentation du mémoire
 
-### 1. Analyse de sentiments sur IMDb
-- Prétraitement linguistique avancé (lemmatisation, POS-tagging, etc.)
-- Vectorisation Bag-of-Words
-- Réduction de dimension par ACP et ACP à noyaux (cosinus)
-- Classification supervisée (LogReg, SVM, KNN)
+L’objectif est double :
+- Expliquer les fondements théoriques de l’ACP classique et de son extension à noyaux.
+- Tester l’intérêt de cette méthode sur plusieurs cas concrets, dans lesquels la réduction linéaire atteint ses limites.
 
-### 2.  Détection d’anomalies sur MNIST
-- Réduction des images (8x8)
-- Entraînement KPCA sur les chiffres "0"
-- Erreur de reconstruction comme score de nouveauté
+Les expériences menées portent sur trois jeux de données :
+1. **IMDb** : classification de sentiments à partir de critiques de films.
+2. **MNIST** : détection d’anomalies dans des images de chiffres manuscrits.
+3. **ECG** : tentative de débruitage de signaux biologiques.
 
-### 3.  Débruitage de signaux ECG
-- Utilisation des bases MIT-BIH et NSTDB
-- Contamination contrôlée avec différents bruits (ma, em, wn)
-- Reconstruction avec KPCA vs ACP
+---
 
+## Auteurs
 
+Ce travail a été réalisé dans le cadre du Master 1 à Dauphine, sous la direction de :
+- M. Denis Pasquignon  
+- M. Patrice Bertrand
+
+Par :
+- Erwan Ouabdesselam  
+- Ibrahim Youssouf Abdelatif  
+- Kevin Wardakhan
